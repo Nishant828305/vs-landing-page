@@ -1,0 +1,335 @@
+*{
+ box-sizing: border-box; 
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+body{
+   background-color: #0d1117;
+    color:#c3d0e5;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* All buttons */
+
+
+.btn{
+  padding: 8px 16px;
+  margin: 5px;
+  background: linear-gradient(to right, #00c6ff, #339cff, #0072ff);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.agent-mode-btn{
+padding: 8px 16px;
+  margin: 5px;
+  background-color: #1f2225;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background: linear-gradient(to right, #00c6ff, #339cff, #0072ff);
+  color: white;
+}
+
+.agent-mode-btn {
+  background-color: #1f2225;
+  color: white;
+}
+
+ /* work on nav bar */
+.navbar {
+  color: #c3d0e5;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0d1117;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px 130px 10px 130px; 
+  box-sizing: border-box;
+}
+
+.nav-text {
+  padding-top: 0px;
+  margin-left: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-2{
+  font-weight: 500;
+  margin-top: 55px;
+  padding: 8px;
+  
+  padding-top: 0px;
+  display: flex;
+  justify-content: center;
+  background-color: #031329;
+  height: 40px;
+}
+.x{
+ margin-left: 650px;
+ font-weight: 400;
+ font-size: 18px;
+ cursor: pointer;
+
+}
+/* hero section */
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+   text-align: center;
+   font-size: 68px;
+   font-weight: 700;
+   /* line-height: 120%; */
+}
+.dwn-wnd{
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+.web-top{
+  margin-top: 5px;
+  margin-bottom: 35px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
+.web{
+  margin-right: 10px;
+}
+
+
+/* =================== Video =================== */
+.vedio-size{
+  display: flex;
+  justify-content: center;
+   background: linear-gradient(to right, #00c6ff, #339cff, #0072ff); 
+  border-radius: 20px;
+  border: solid 1px;
+  margin: 0px 130px;
+}
+
+/* Anchor tag and p tag */
+a{
+  color: #1586d1;
+  font-weight: 600;
+}
+p{
+    color:#9aa6b9;
+}
+
+
+/* AI model section */
+.div-pic{
+  margin: 0px 130px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.div-pics{
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1f2225;;
+}
+
+
+.ai-feature{
+  margin-top: 40px;
+  padding: 20px;
+  background: linear-gradient(135deg, #32cd32, #37105d, #4169e1, #b0e0e6);
+  margin-right: 130px;
+  margin-left: 130px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  color: white;
+}
+
+
+/* Agent mode */
+.Agent-mode{
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 140px;
+}
+.agent{
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  margin-right: 80px;
+  padding-top: 130px;
+}
+
+
+/* code with Extension */
+
+.code-extension{
+  width: 350px;
+  margin-top: 100px;
+}
+
+
+/* extensions Grid */
+.borders{
+  display: flex;
+  justify-content: space-between;
+}
+.small-box{
+ display: flex;
+ justify-content: space-around;
+ 
+}
+
+.box{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2px;
+  margin: 10px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  width: 250px;
+  background-color: #1f2225;
+  border: none;
+  cursor: pointer;
+}
+
+.box-1,
+.box-2 {
+  padding-right: 10px;
+}
+.box-2{
+   padding-right: 10px;
+}
+
+
+.inner-box {
+  padding: 15px;
+  width: 290px;
+  margin: 8px;
+  border-radius: 10px;
+  background-color: #1f2225;
+}
+
+
+ /* Language Support */
+
+.lang{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 130px;
+}
+
+.code{
+  margin-top: 100px;
+  width: 350px;
+}
+
+
+.inner{
+  display: flex;
+  justify-content:space-between;
+}
+
+.outer {
+  width: 700px;
+  height: 200px;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.sp{
+  display: flex;
+  align-items: center;
+}
+
+
+/* Fully-customizable */
+.Fully-customise{
+   display: flex;
+  justify-content: space-between;
+  margin-right: 130px;
+  margin-left: 130px;
+  margin-top: 220px;
+}
+
+
+
+
+/* Rich Features */
+.rich {
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+  
+}
+
+/* Editor Features */
+.inner-box{
+  padding: 15px;
+  width: 290px;
+  margin: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.last-outer{
+  margin: 25px 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/* Footer */
+.last-logo{
+  margin-right:130px;
+  margin-left:130px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.last-line{
+  margin: 0px 130px;
+  margin-bottom: 100px;
+  cursor: pointer;
+ 
+}
+.license{
+  margin-right: 15px;
+  font-size: 12px;
+  font-weight: 500;
+
+}
+
+
+
+
