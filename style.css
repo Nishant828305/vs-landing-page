@@ -333,3 +333,129 @@ p{
 
 
 
+
+
+
+
+
+/* Responsive Styles for tablets and smaller screens */
+@media screen and (max-width: 1024px) {
+  .navbar,
+  .vedio-size,
+  .div-pic,
+  .ai-feature,
+  .lang,
+  .Fully-customise,
+  .last-logo,
+  .last-line {
+    margin: 0 40px;
+    padding: 10px;
+  }
+
+  .Agent-mode {
+    margin: 40px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .agent {
+    margin-right: 0;
+    padding-top: 40px;
+    align-items: center;
+  }
+
+  .hero-section {
+    font-size: 50px;
+    margin-top: 60px;
+  }
+
+  .outer {
+    width: 100%;
+    height: auto;
+  }
+
+  .box,
+  .inner-box {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .borders,
+  .small-box,
+  .div-pic,
+  .lang,
+  .Fully-customise,
+  .last-outer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsive Styles for phones */
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-2 {
+    margin-top: 30px;
+    font-size: 14px;
+    padding: 6px;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .x {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .hero-section {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+
+  .btn,
+  .agent-mode-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .vedio-size {
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  .ai-feature {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Agent-mode {
+    margin: 20px;
+  }
+
+  .code-extension,
+  .code {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .outer {
+    padding: 15px;
+  }
+
+  .last-logo,
+  .last-line {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+  }
+
+  .license {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
