@@ -1,10 +1,15 @@
-*{
+  *{
  box-sizing: border-box; 
+}
+img {
+    overflow: clip;
+    overflow-clip-margin: content-box;
 }
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevents horizontal scrolling */
+    overflow-x: hidden; 
+    /* Prevents horizontal scrolling */ 
 }
 body{
    background-color: #0d1117;
@@ -57,14 +62,14 @@ padding: 8px 16px;
 .navbar {
   color: #c3d0e5;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   background-color: #0d1117;
+  align-items: baseline;
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  
   width: 100%;
-  padding: 10px 130px 10px 130px; 
   box-sizing: border-box;
 }
 
@@ -74,17 +79,18 @@ padding: 8px 16px;
   font-weight: 600;
   cursor: pointer;
 }
-
+.nav-text:hover{
+  color: white;
+}
 .nav-2{
   font-weight: 500;
   margin-top: 55px;
   padding: 8px;
-  
   padding-top: 0px;
   display: flex;
   justify-content: center;
   background-color: #031329;
-  height: 40px;
+  height: 50px;
 }
 .x{
  margin-left: 650px;
@@ -125,7 +131,8 @@ padding: 8px 16px;
 .vedio-size{
   display: flex;
   justify-content: center;
-   background: linear-gradient(to right, #00c6ff, #339cff, #0072ff); 
+   background: linear-gradient(to right, #00c6ff, #339cff, #0072ff);
+ 
   border-radius: 20px;
   border: solid 1px;
   margin: 0px 130px;
@@ -332,12 +339,6 @@ p{
 
 
 
-
-
-
-
-
-
 /* Responsive Styles for tablets and smaller screens */
 @media screen and (max-width: 1024px) {
   .navbar,
@@ -348,7 +349,7 @@ p{
   .Fully-customise,
   .last-logo,
   .last-line {
-    margin: 0 40px;
+    margin: 0 0px;
     padding: 10px;
   }
 
@@ -379,7 +380,7 @@ p{
     width: 100%;
     margin: 10px 0;
   }
-
+  
   .borders,
   .small-box,
   .div-pic,
@@ -392,21 +393,26 @@ p{
 }
 
 /* Responsive Styles for phones */
-@media screen and (max-width: 600px) {
+@media(max-width: 600px) {
   .navbar {
-    padding: 10px 20px;
-    flex-direction: column;
-    align-items: flex-start;
+   
+  max-width:100%;
+    font-size:xx-small;
+     display: flex;
+     flex-wrap: wrap;
   }
+  .nav-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
 
-  .nav-2 {
-    margin-top: 30px;
-    font-size: 14px;
-    padding: 6px;
-    height: auto;
-    flex-direction: column;
-  }
-
+.sun{
+  display: none;
+}
+ 
   .x {
     margin-left: 0;
     font-size: 16px;
@@ -424,33 +430,47 @@ p{
   }
 
   .vedio-size {
-    margin: 20px;
-    flex-direction: column;
+    display: none;
+   
   }
-
+  .div-pic{
+    margin-top: 0px;
+  }
+  .div-pics{
+    margin:10px ;
+  }
   .ai-feature {
     flex-direction: column;
     align-items: center;
-  }
-
-  .Agent-mode {
     margin: 20px;
+    
   }
-
-  .code-extension,
-  .code {
+  .ag-img{
+   display: none;
+  }
+  .small-box{
+    width: 300px;
+  }
+  .inner{
     width: 100%;
-    margin: 20px 0;
+    font-size: x-small;
   }
-
   .outer {
-    padding: 15px;
+    width:100%;
+  
   }
-
+  .full{
+    display: none;
+  }
+   .rich{
+    width: 100%;
+    margin: 30px;
+   }
+   .inner-box{
+     width: 300px;
+   }
   .last-logo,
-  .last-line {
-    flex-direction: column;
-    align-items: center;
+  .last-line {    align-items: center;
     margin: 40px 20px;
   }
 
@@ -459,3 +479,91 @@ p{
     text-align: center;
   }
 }
+
+@media(max-width: 480px) {
+  .navbar {
+   
+  max-width:100%;
+    font-size:xx-small;
+     display: flex;
+     flex-wrap: wrap;
+  }
+  .nav-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.sun{
+  display: none;
+}
+ 
+  .x {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .hero-section {
+    font-size: 36px;
+    padding: 0 10px;
+  }
+
+  .btn,
+  .agent-mode-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .vedio-size {
+    display: none;
+   
+  }
+  .div-pic{
+    margin-top: 0px;
+  }
+  .div-pics{
+    margin:10px ;
+  }
+  .ai-feature {
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    
+  }
+  .ag-img{
+   display: none;
+  }
+  .small-box{
+    width: 300px;
+  }
+  .inner{
+    width: 100%;
+    font-size: x-small;
+  }
+  .outer {
+    width:100%;
+  
+  }
+  .full{
+    display: none;
+  }
+   .rich{
+    width: 100%;
+    margin: 30px;
+   }
+   .inner-box{
+     width: 350px;
+   }
+  .last-logo,
+  .last-line {    align-items: center;
+    margin: 40px 20px;
+  }
+
+  .license {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
+
